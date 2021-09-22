@@ -54,9 +54,12 @@
                     </figure>
                     <h2>Privacy e Termini</h2>
                 </div>
-                <div class="icons">
-                    <i class="fas fa-ellipsis-h"></i>
-                    <i class="fas fa-user-tie rounded"></i>
+                <div class="icons d-flex">
+
+                    <svg class="gb_Ve" focusable="false" viewBox="0 0 24 24">
+                        <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                    </svg>
+                    <div><i class="fas fa-user-tie rounded"></i></div>
                 </div>
             </div>
             <nav class="header-bottom">
@@ -79,11 +82,11 @@
                 </ul>
             </nav>
         </div>
+        </div>
     </header>
 
     <main>
         <div class="container">
-
             <?php foreach ($faqs as $question) : ?>
                 <section>
                     <?php echo $question['title']; ?>
@@ -91,12 +94,38 @@
                 </section>
             <?php endforeach; ?>
         </div>
-
-
-
     </main>
 
     <footer>
+        <div class=" container 
+        d-flex justify-content-between">
+
+            <nav>
+                <ul class="d-flex">
+                    <li>
+                        <small>Google</small>
+                    </li>
+                    <li>
+                        <small>Tutto su Google</small>
+                    </li>
+                    <li>
+                        <small>Privacy</small>
+                    </li>
+                    <li>
+                        <small>Termini</small>
+                    </li>
+                </ul>
+            </nav>
+            <div class="d-flex">
+                <img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAABGdBTUEAALGPC/xhBQAAAFpQTFRFAAAAc8b%2BeNj%2BeLL7lt3/YbL4cs/9rNn8p9b7%2Bfn5hdD/a8D/7vD/vOL9itf%2B////3PD%2Byuj9R6348Pb7KZz2UL78MKL3Oqv4Zsz/ndX8qN/%2BI5T0S7X4W8b9mmuivQAAAAF0Uk5TAEDm2GYAAACXSURBVBjTXYqLEsIwCARR%2B27zpCFNxP//TSGOTu3OhDs2wGaPM9bD8hKGMDtnDq130GkxDK/BY/tVc6CtXa21Q72ClFKoqUrINBLAzHP9grKpccxFYmqNIcY4j%2BXDiLJBztmUXCRkGgkgIsZbO1kwEjVDKwYmDriSGt6FPHrnp6x1Bd/vzxP9Bj8mFfBH2K8Gtng1AA95bxQhE7o%2B68UQAAAAAElFTkSuQmCC" alt="">
+
+                <select class="language">
+                    <option value="it">Italiano</option>
+                </select>
+            </div>
+        </div>
+
+
     </footer>
 </body>
 
